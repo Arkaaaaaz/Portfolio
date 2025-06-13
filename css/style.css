@@ -32,8 +32,13 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     padding: 0.2cm;
+    transition: 0.25s;
 }
 
+.btn-modif:hover {
+    background-color: #fff !important;
+    color: #000 !important;
+}
 
 /* HEADER */
 
@@ -182,9 +187,19 @@ align-items: end;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2%;
+    gap: 15px;
 }
 
+
+input[type="checkbox"]:checked{
+    background-color: #fe4b57;
+    border-color: #fe4b57;
+}
+/* permets de changer la couleur "autour" de la checkbox lorsqu'elle est en focus (pas forcément checked) */
+input[type="checkbox"]:focus{
+    border-color: #fe4b57;
+    box-shadow: 0 0 0 0.25rem rgba(254, 75, 87, 0.25) !important;
+}
 /* BOUTON REMONTER */
 
 .haut-page {
