@@ -166,34 +166,6 @@ header a:hover {
     padding: 0 5%;
 }
 
-/* Hauteur fixe pour les blocs projets */
-.container-projet .row.g-0 {
-    height: 400px;
-}
-
-/* Centrage des images dans les carousels */
-.carousel {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-.carousel-item {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-item img {
-    max-height: 100%;
-    width: auto;
-    object-fit: contain;
-}
 
 .container-projet h2 {
     color: #fe4b57 !important;
@@ -476,17 +448,6 @@ footer a:hover {
     }
 
     /* Hauteur fixe adaptée pour mobile */
-    .container-projet .row.g-0 {
-        height: 450px;
-    }
-
-    /* Ajustement des images pour mobile */
-    .carousel-item img {
-        max-height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-
     .container-projet h2 {
         font-size: 20px;
     }
