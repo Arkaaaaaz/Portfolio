@@ -92,7 +92,6 @@ header a:hover {
     justify-content: space-between;
     align-items: center;
 }
-/* .img-about, */
 .contenu-about {
     width: 40%;
     height: 40%;
@@ -265,6 +264,12 @@ footer a:hover {
     color: #fe4b57 !important;
 }
 
+.btn-footer{
+        background-color: #fe4b57;
+        color: #fff;
+        font-weight: bold;
+        min-width: 320px;
+    }
 
 /* RESPONSIVE */
 
@@ -499,6 +504,7 @@ footer a:hover {
         font-size: 14px;
     }
 
+    
     /* BOUTON REMONTER */
     .haut-page {
         bottom: 1rem;
