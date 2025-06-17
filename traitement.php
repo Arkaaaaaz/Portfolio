@@ -1,7 +1,7 @@
 <?php
 
 // Vérifie si le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 // Récupère les données du formulaire
     $nom = $_POST['nom'];
@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
 // Valide les données (exemple simple)
-if (empty($nom) || empty ($mail) || empty ($message)) {
+if(empty($nom) || empty ($email) || empty ($message)) {
     die("Tous ces champs sont obligatoires.");
 }
 
@@ -33,17 +33,17 @@ echo "Message: " .$message . "<br>";
 // Exemple d'envoi d'email
 $to = "contact@paradisdev.fr";
 $subject = "Nouveau Message de $nom";
-$body = "Vous avez reçu un nouveau message de $nom.\n\nPrénom: $prenom\n\nEmail: $email\n\nTéléphone: $tel\n\nMessage:\n$message";
-$headers = "From: $email"
+$body = "Vous avez reçu un nouveau message de $nom.\n\nPrénom: $prenom
+\n\nEmail: $email\n\nTelephone: $tel\n\nMessage:\n$message";
+$headers = "From: $email";
 
-if (mail($to, $subject, $body, $headers))
-        {
+if(mail($to, $subject, $body, $headers)){
     echo "Email envoyé avec succès";
-        } else {
+}else{
     echo "Échec de l'envoi de l'email.";        
-        }
+}
 
-} else {
+}else{
 // Si le formulaire n'a pas été soumis, redirige vers le formulaire
     header("Location:index.html");
 }
