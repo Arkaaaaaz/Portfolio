@@ -23,19 +23,19 @@
         </div>
 
         <nav class="navbar navbar-expand-xl" aria-label="Fourth navbar example">
-            <div class="container-fluid">
-                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
-                    aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="container-fluid"><button class="navbar-toggler text-white" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04"
+                    aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarsExample04">
-                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item"> <a class="nav-link text-white sumana" href="#section-accueil">ACCUEIL</a>
+<ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                     <li class="nav-item"> <a class="nav-link text-white sumana" href="#section-accueil">ACCUEIL</a>
                         </li>
-                        <li class="nav-item"> <a class="nav-link text-white sumana" href="#section-about">A PROPOS</a>
-                        </li>
-                        <li class="nav-item"> <a class="nav-link text-white sumana"
+        <li class="nav-item"> <a class="nav-link text-white sumana" href="#section-about">A PROPOS</a>
+</li>
+         <li class="nav-item"> <a class="nav-link text-white sumana"
                                 href="#section-experience">EXPÉRIENCE</a> </li>
-                        <li class="nav-item"> <a class="nav-link text-white sumana"
+     <li class="nav-item"> <a class="nav-link text-white sumana"
                                 href="#section-portfolio">PORTFOLIO</a> </li>
 
                     </ul>
@@ -458,29 +458,36 @@
 
             <h2 class="text-center">POUR ME CONTACTER !</h2>
 
-            <form class="form">
+            <form class="form" action="traitement.php" method="POST">
 
                 <div class="mb-3">
+                    <label for="nom" class="form-label"></label> 
+                    <input type="text" class="form-control" id="nom" name="nom" placeholder="NOM*" required>
 
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="NOM*" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="prenom" class="form-label"></label> 
+                    <input type="text" class="form-control" id="prenom" name="prenom" placeholder="PRÉNOM*" required>
+
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label"></label> 
+                    <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL*" required>
 
                 </div>
 
                 <div class="mb-3">
 
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="PRÉNOM*" required>
-
-                </div>
-
-                <div class="mb-3">
-
-                    <input type="email" class="form-control" id="formGroupExampleInput3" placeholder="EMAIL*" required>
+                    <label for="tel" class="form-label"></label> 
+                    <input type="tel" class="form-control" id="tel" name="tel" placeholder="Téléphone (optionnel)">
 
                 </div>
 
                 <div class="form-floating">
-
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    <label for="message" class="form-label" required></label> 
+                    <textarea class="form-control" placeholder="Leave a comment here" id="message" name="message"
                         style="height: 200px"></textarea>
 
                     <label for="floatingTextarea2">VOTRE MESSAGE...</label>
@@ -499,7 +506,7 @@
 
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-modif">ENVOYER</button>
+                <input type="submit" class="btn btn-primary btn-modif" value="ENVOYER">
 
             </form>
 
