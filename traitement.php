@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (mail($to, $subject, $body, $headers)) {
         echo "✅ Email envoyé avec succès.<br>";
         echo "⏳ Redirection vers la page d'accueil dans 3 secondes...";
-        echo '<script>setTimeout(function(){ window.location.href = "index.html"; }, 3000);</script>';
+        echo '<script>setTimeout(function(){ window.location.href = "index.html"; }, 3000);</script>'; // Permets de rediriger sur la page d'où le "mail" a été envoyé
     } else {
         echo "❌ Échec de l'envoi de l'email.";
     }
