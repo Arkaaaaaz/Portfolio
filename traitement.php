@@ -1,17 +1,17 @@
-<?php
+ <?php
 
 // Vérifie si le formulaire a été soumis
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
 
 // Récupère les données du formulaire
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $email = $_POST['email'];
-    $tel = $_POST['tel'];
-    $message = $_POST['message'];
+    $nom = $_POST["nom"];
+    $prenom = $_POST["prenom"];
+    $email = $_POST["email"];
+    $tel = $_POST["tel"];
+    $message = $_POST["message"];
 
 // Valide les données (exemple simple)
-if(empty($nom) || empty ($email) || empty ($message)) {
+if (empty($nom) || empty ($email) || empty ($message)) {
     die("Tous ces champs sont obligatoires.");
 }
 
@@ -31,11 +31,14 @@ echo "Email: " . $email . "<br>";
 echo "Message: " .$message . "<br>";
 
 // Exemple d'envoi d'email
-$to = "contact@paradisdev.fr";
-$subject = "Nouveau Message de $nom";
+$to = "contact@paradisdev.fr"; // L'adresse de destination
+$subject = "Nouveau Message de $prenom $nom";
 $body = "Vous avez reçu un nouveau message de $nom.\n\nPrénom: $prenom
 \n\nEmail: $email\n\nTelephone: $tel\n\nMessage:\n$message";
-$headers = "From: $email";
+// En-têtes d'email
+$headers = "From: noreply@paradisdev.fr\r\n"; //si je mets pas ça, l'envoi de l'email bloque car il faut une adresse qui appartient au domaine du site
+$headers .= "Reply-To: $email\r\n";  // Permet de répondre à l'email de l'expéditeur directement en utilisant la fonction "répondre" dans la boîte mail
+$headers .= "Content-Type: text/plain; charset=utf-8\r\n"; // Permet de gérer les caractères spéciaux
 
 if(mail($to, $subject, $body, $headers)){
     echo "Email envoyé avec succès";
