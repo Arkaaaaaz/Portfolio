@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body .= "Téléphone : $tel\n\n";
     $body .= "Message :\n$message";
     
-    $headers = "From: noreply@paradisdev.fr\r\n";
+    $headers = "From: contact@paradisdev.fr\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
 
