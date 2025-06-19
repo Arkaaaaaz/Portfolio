@@ -240,7 +240,7 @@ input[type="checkbox"]:focus {
 
 .haut-page {
     position: fixed;
-    bottom: 2rem;
+    bottom: 5rem;
     right: 2rem;
     display: inline-flex;
     justify-content: center;
@@ -507,7 +507,7 @@ footer a:hover {
     
     /* BOUTON REMONTER */
     .haut-page {
-        bottom: 1rem;
+        bottom: 5rem;
         right: 1rem;
         padding: 0.4rem;
     }
