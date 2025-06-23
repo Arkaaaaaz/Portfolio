@@ -43,13 +43,6 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-
-    <!-- <script>
-        function onSubmit(token) {
-            document.getElementById("form-captcha").submit();
-        }
-    </script> -->
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LcBJ2YrAAAAAHzI9rXXoq0PrmjEjzs3K8_osqtK"></script>
 

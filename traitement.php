@@ -35,6 +35,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Décode la réponse JSON en tableau associatif
     $Reponse = json_decode($capcharespo, true);
 
+    // Affiche proprement la réponse brute JSON et le tableau décodé
+echo "<pre>Réponse brute JSON :\n" . htmlspecialchars($capcharespo) . "\n\n";
+echo "Réponse décodée (array) :\n";
+print_r($Reponse);
+echo "</pre>";
+exit;
+
     // Vérifie si la validation reCAPTCHA a réussi et si le score est suffisant
     if (!$Reponse['success'] || $Reponse['score'] < 0.5) { // La valeur numérique = score à atteindre pour valider le formulaire
         die("Échec reCAPTCHA : activité suspecte détectée."); // BLoque si suspicion de bot
