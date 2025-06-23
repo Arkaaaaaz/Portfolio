@@ -30,17 +30,17 @@
         </div>
 
         <div class="form-floating">
-            <label for="message" class="form-label" required></label>
+            <label for="message" class="form-label"></label>
             <textarea class="form-control" placeholder="Leave a comment here" id="message" name="message"
-                style="height: 200px"></textarea>
+                style="height: 200px" required></textarea>
 
-            <label for="floatingTextarea2">VOTRE MESSAGE...</label>
+            <label for="message">VOTRE MESSAGE...</label>
 
         </div>
 
         <div class="form-check">
 
-            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <input class="form-check-input" type="checkbox" id="gridCheck" name="checkform" required>
 
             <label class="form-check-label" for="gridCheck">
 
@@ -53,7 +53,7 @@
         <input type="submit" class="btn btn-primary btn-modif g-recaptcha" id="BTNFORM" />
 
         <p>
-            <?php  echo $_GET["msg"] ?>
+            <?php if(!empty($_GET["msg"])) echo htmlspecialchars($_GET["msg"]); ?>
         </p>
 
     </form>

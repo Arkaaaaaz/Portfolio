@@ -45,14 +45,14 @@
 
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
-    <script>
+    <!-- <script>
         function onSubmit(token) {
             document.getElementById("form-captcha").submit();
         }
-    </script>
+    </script> -->
 
     <script src="https://www.google.com/recaptcha/api.js?render=6LcBJ2YrAAAAAHzI9rXXoq0PrmjEjzs3K8_osqtK"></script>
-    
+
     <script>
         grecaptcha.ready(function () {
             const form = document.getElementById('form-captcha');
