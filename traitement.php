@@ -1,5 +1,8 @@
 <?php
+require __DIR__ . '/vendor/autoload.php'; // charge l'autoload de composer
 
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
 // Pour vérifier si le formulaire a été soumis avec la méthode POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {   
 
@@ -12,7 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Clé secrète reCAPTCHA envoyé par le formulaire
-    $cle_secrete = '6LcBJ2YrAAAAAHNrhYE98pYmVmg_YEqCph-zik21';
+    $cle_secrete = $_ENV['RECAPTCHA_SECRET'];
+    
 
     // URL de vérification reCAPTCHA côté serveur
     $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';

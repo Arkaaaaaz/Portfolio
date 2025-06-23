@@ -1,0 +1,16 @@
+{
+    "name": "tompa/portfolio",
+    "description": "Portfolio de Thomas Paradis",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thomas Paradis",
+            "email": "tom.paradis@orange.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
