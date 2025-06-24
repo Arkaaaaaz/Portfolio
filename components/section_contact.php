@@ -1,6 +1,6 @@
 <section id="section-contact">
 
-    <h2 class="text-center">POUR ME CONTACTER !</h2>
+    <h2 class="text-center"><?php echo isset($_GET["msg"]) ? htmlspecialchars($_GET["msg"]) : "Pour me contacter !"; ?></h2>
 
     <form class="form" action="traitement.php" id="form-captcha" method="POST">
 
@@ -51,10 +51,6 @@
         </div>
 
         <input type="submit" class="btn btn-primary btn-modif g-recaptcha" id="BTNFORM" />
-
-        <p>
-            <?php if(!empty($_GET["msg"])) echo htmlspecialchars($_GET["msg"]); ?>
-        </p>
 
     </form>
 

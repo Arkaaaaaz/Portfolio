@@ -74,10 +74,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=utf-8";
 
+    //$_title = "Pour me contacter !"; //test déclaration variable
 
     // Envoi du mail et redirection selon succès ou échec
     if (mail($to, $subject, $body, $headers)) {
-        header("Location:index.php?msg=Message bien envoyé#section-contact");
+        header("Location:index.php?msg=Message bien envoyé!#section-contact");
     } else {
         header("Location:index.php?msg=Échec de l'envoi du message#section-contact");
     }
