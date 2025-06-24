@@ -1,5 +1,13 @@
 <?php
 
+// Charge dépendances Composer
+
+require __DIR__ . '/vendor/autoload.php';
+
+// Variables environnement
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
 // Pour vérifier si le formulaire a été soumis avec la méthode POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {   
 

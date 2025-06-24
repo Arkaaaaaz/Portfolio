@@ -1,0 +1,4 @@
+#Pour exclure ces fichiers et dossier de GIT 
+.env 
+/vendor/
+/composer.lock 
