@@ -1,8 +1,5 @@
 <?php
-require __DIR__ . '/vendor/autoload.php'; // charge l'autoload de composer
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
 // Pour vérifier si le formulaire a été soumis avec la méthode POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {   
 
@@ -15,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Clé secrète reCAPTCHA envoyé par le formulaire
-    $cle_secrete = $_ENV['RECAPTCHA_SECRET'];
+    $cle_secrete = '6LcBJ2YrAAAAAHNrhYE98pYmVmg_YEqCph-zik21';
     
 
     // URL de vérification reCAPTCHA côté serveur
@@ -34,13 +31,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Décode la réponse JSON en tableau associatif
     $Reponse = json_decode($capcharespo, true);
-
-    // Affiche proprement la réponse brute JSON et le tableau décodé
-echo "<pre>Réponse brute JSON :\n" . htmlspecialchars($capcharespo) . "\n\n";
-echo "Réponse décodée (array) :\n";
-print_r($Reponse);
-echo "</pre>";
-exit;
 
     // Vérifie si la validation reCAPTCHA a réussi et si le score est suffisant
     if (!$Reponse['success'] || $Reponse['score'] < 0.5) { // La valeur numérique = score à atteindre pour valider le formulaire
