@@ -1,6 +1,6 @@
 <section id="section-contact">
 
-    <h2 class="text-center"><?php echo isset($_GET["msg"]) ? htmlspecialchars($_GET["msg"]) : "Pour me contacter !"; ?></h2>
+    <h2 id="title-contact" class="text-center">Pour me contacter !</h2>
 
     <form class="form" action="traitement.php" id="form-captcha" method="POST">
 

@@ -63,6 +63,27 @@
         });
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const h2 = document.getElementById("title-contact");
+
+            const url = new URL(window.location.href);
+            const msg = url.searchParams.get("msg");
+
+            if (msg) {
+                h2.textContent = msg;
+
+                // Nettoyage de l'URL sans recharger
+                url.searchParams.delete("msg");
+                window.history.replaceState({}, document.title, url.pathname + url.hash);
+
+                // Après 10s, on remet le titre original
+                setTimeout(() => {
+                    h2.textContent = "Pour me contacter !";
+                }, 3000); // c'est en ms
+            }
+        });
+    </script>
 
 
 </body>
