@@ -85,6 +85,12 @@
         });
     </script>
 
+    <script> 
+
+        const datefooter = new Date ()
+        document.getElementById("datefooter").textContent = datefooter.getFullYear();
+    </script>
+
 
 </body>
 

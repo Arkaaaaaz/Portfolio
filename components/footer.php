@@ -15,7 +15,7 @@
 
         </ul>
 
-        <p class="text-center">© 2025 Thomas PARADIS</p>
+        <p class="text-center">© <span id="datefooter"> </span> Thomas PARADIS</p>
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mt-2 mb-3">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-footer" data-bs-toggle="modal" data-bs-target="#exampleModalMentions">
