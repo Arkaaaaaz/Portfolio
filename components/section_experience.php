@@ -8,7 +8,7 @@
 
                     <div class="logo-texte">
 
-                        <img src="medias/html_logo.webp" class="img-fluid" alt="Image du logo HTML">
+                        <img src="medias/htmlsvg.svg" class="img-fluid" alt="Image du logo HTML">
 
                         <p class="text-center">HTML</p>
 
@@ -16,7 +16,7 @@
 
                     <div class="logo-texte">
 
-                        <img src="medias/css_logo.png" class="img-fluid" alt="Image du logo CSS">
+                        <img src="medias/csssvg.svg" class="img-fluid" alt="Image du logo CSS">
 
                         <p class="text-center">CSS</p>
 
@@ -24,7 +24,7 @@
 
                     <div class="logo-texte">
 
-                        <img src="medias/javascript_logo.png" class="img-fluid" alt="Image du logo Javascript">
+                        <img src="medias/javascriptsvg.svg" class="img-fluid" alt="Image du logo Javascript">
 
                         <p class="text-center">JAVASCRIPT</p>
 
@@ -36,7 +36,7 @@
 
                     <div class="logo-texte">
 
-                        <img src="medias/figma_logo.png" class="img-fluid" alt="Image du logo Figma">
+                        <img src="medias/figmasvg.svg" class="img-fluid" alt="Image du logo Figma">
 
                         <p class="text-center">FIGMA</p>
 
@@ -44,7 +44,7 @@
 
                     <div class="logo-texte">
 
-                        <img src="medias/vscode_logo.png" class="img-fluid" alt="Image du logo VS Code">
+                        <img src="medias/vscodesvg.svg" class="img-fluid" alt="Image du logo VS Code">
 
                         <p class="text-center">VS CODE</p>
 
@@ -52,7 +52,7 @@
 
                     <div class="logo-texte">
 
-                        <img src="medias/github_logo.png" class="img-fluid" alt="Image du logo GitHub">
+                        <img src="medias/githubsvg.svg" class="img-fluid" alt="Image du logo GitHub">
 
                         <p class="text-center">GITHUB</p>
 
