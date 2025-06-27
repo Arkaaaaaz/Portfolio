@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Hind:wght@300;400;500;600;700&family=Sumana:wght@400;700&display=swap');
 
-:root {
-    --dark: #1c1c1c;
-    --light: #c4c4c4;
-    --teal: #008080;
-}
-
 html {
     scroll-behavior: smooth !important;
 }
@@ -67,7 +61,8 @@ h2 {
     font-family: "Sumana", serif;
 }
 
-.curseur {
+.curseur,
+.blink {
     display: inline-block;
     width: 3px;
     margin-left: 4px;

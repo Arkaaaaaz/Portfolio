@@ -32,47 +32,29 @@
         const texteEcrit = document.querySelector(".texte-ecrit");
         const curseur = document.querySelector(".curseur");
 
-        const textArray = ["Portfolio !"];
-
-        let textArrayIndex = 0;
+        const text = "Portfolio !";
         let charIndex = 0;
 
-        const erase = () => {
-            if (charIndex > 0) {
-                curseur.classList.remove('blink');
-                texteEcrit.textContent = textArray[textArrayIndex].slice(0, charIndex - 1);
-                charIndex--;
-                setTimeout(erase, 80);
-            } else {
-                curseur.classList.add('blink');
-                textArrayIndex++;
-                if (textArrayIndex > textArray.length - 1) {
-                    textArrayIndex = 0;
-                }
-                setTimeout(type, 1000);
-            }
-        }
-
         const type = () => {
-            if (charIndex <= textArray[textArrayIndex].length - 1) {
+            if (charIndex < text.length) {
                 curseur.classList.remove('blink');
-                texteEcrit.textContent +=
-                    textArray[textArrayIndex].charAt(charIndex);
+                texteEcrit.textContent += text.charAt(charIndex);
                 charIndex++;
                 setTimeout(type, 120);
             } else {
-                curseur.classList.add('blink');
-                setTimeout(erase, 1000);
+                curseur.classList.add('blink'); // clignote à la fin
             }
-        }
+        };
 
         document.addEventListener("DOMContentLoaded", () => {
             type();
-        })
+        });
 
         setTimeout(() => {
             window.location.replace("https://paradisdev.fr/index.php");
-        }, 1000);
+        }, 2500);
+    </script>
+
 
     </script>
 </body>
