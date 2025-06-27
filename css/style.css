@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Hind:wght@300;400;500;600;700&family=Sumana:wght@400;700&display=swap');
 
+:root {
+    --dark: #1c1c1c;
+    --light: #c4c4c4;
+    --teal: #008080;
+}
+
 html {
     scroll-behavior: smooth !important;
 }
@@ -40,10 +46,52 @@ h2 {
     color: #000 !important;
 }
 
-.sumana{
-        font-family: "Sumana", serif;
-        font-size: 20px;
+.sumana {
+    font-family: "Sumana", serif;
+    font-size: 20px;
 }
+
+
+
+
+/* PAGE LOAD */
+
+.titreload {
+    color: #fff;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 8rem;
+}
+
+.texte-ecrit {
+    color: #fe4b57;
+    font-family: "Sumana", serif;
+}
+
+.curseur {
+    display: inline-block;
+    width: 3px;
+    margin-left: 4px;
+    background: #fe4b57;
+}
+
+.curseur.blink {
+    animation: blink 0.8s ease-in-out infinite;
+}
+
+
+@keyframes blink {
+
+    0%,
+    100% {
+        background: #fe4b57;
+    }
+
+    40%,
+    50% {
+        background: transparent;
+    }
+}
+
 /* HEADER */
 
 header a:hover {
@@ -51,11 +99,11 @@ header a:hover {
 
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border-color: #fff !important;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -92,6 +140,7 @@ header a:hover {
     justify-content: space-between;
     align-items: center;
 }
+
 .contenu-about {
     width: 40%;
     height: 40%;
@@ -103,12 +152,13 @@ header a:hover {
     padding-left: 5%;
 }
 
-#section-about img{
+#section-about img {
     width: 500px;
     height: 500px;
     border-radius: 50%;
     object-fit: cover;
 }
+
 .contenu-about {
     display: flex;
     flex-direction: column;
@@ -191,11 +241,11 @@ header a:hover {
     filter: invert(100%);
 }
 
-.hauteur-portfolio{
+.hauteur-portfolio {
     height: 450px !important;
 }
 
-#section-portfolio img{
+#section-portfolio img {
     object-fit: cover;
 }
 
@@ -264,13 +314,13 @@ footer a:hover {
     color: #fe4b57 !important;
 }
 
-.btn-footer{
-        background-color: #fe4b57;
-        color: #fff;
-        font-weight: bold;
-        min-width: 320px;
-    }
-    
+.btn-footer {
+    background-color: #fe4b57;
+    color: #fff;
+    font-weight: bold;
+    min-width: 320px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1250px) {
@@ -286,7 +336,7 @@ footer a:hover {
         padding: 2rem 0;
     }
 
-    #section-about img{
+    #section-about img {
         width: 400px;
         height: 400px;
     }
@@ -313,6 +363,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 900px) {
+
     /* SECTION PORTFOLIO */
     .container-projet {
         padding: 0 2%;
@@ -335,7 +386,7 @@ footer a:hover {
 }
 
 @media screen and (max-width: 700px) {
-    
+
     /* HEADER */
     header {
         flex-direction: column;
@@ -380,7 +431,7 @@ footer a:hover {
         gap: 2rem;
     }
 
-    #section-about img{
+    #section-about img {
         width: 280px;
         height: 280px;
     }
@@ -504,7 +555,7 @@ footer a:hover {
         font-size: 14px;
     }
 
-    
+
     /* BOUTON REMONTER */
     .haut-page {
         bottom: 5rem;
