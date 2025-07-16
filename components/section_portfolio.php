@@ -31,7 +31,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="medias/tp_aev1.png"
+                src="medias/tp_aev1.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo de la page d'accueil du site fictif AEV"
               />
@@ -39,7 +39,7 @@
 
             <div class="carousel-item">
               <img
-                src="medias/tp_aev2.png"
+                src="medias/tp_aev2.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo de la page présentation du site fictif AEV"
               />
@@ -47,7 +47,7 @@
 
             <div class="carousel-item">
               <img
-                src="medias/tp_aev3.png"
+                src="medias/tp_aev3.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo de la section no services du site fictif AEV"
               />
@@ -107,7 +107,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="medias/tp_photo1.png"
+                src="medias/tp_photo1.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo de la page d'accueil du site fictif Anna Photographie"
               />
@@ -115,7 +115,7 @@
 
             <div class="carousel-item">
               <img
-                src="medias/tp_photo2.png"
+                src="medias/tp_photo2.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo de la page à propos du site fictif Anna Photographie"
               />
@@ -123,7 +123,7 @@
 
             <div class="carousel-item">
               <img
-                src="medias/tp_photo3.png"
+                src="medias/tp_photo3.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo du formulaire de contact du site fictif Anna Photographie"
               />
@@ -182,7 +182,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img
-                src="medias/freemuz.png"
+                src="medias/freemuz.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo du wireframe de l'application fictive freemuz"
               />
@@ -190,7 +190,7 @@
 
             <div class="carousel-item">
               <img
-                src="medias/freemuz1.png"
+                src="medias/freemuz1.webp"
                 class="d-block w-100 img-fluid"
                 alt="Photo du mockup de l'application fictive freemuz"
               />
