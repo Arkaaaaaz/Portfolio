@@ -1,10 +1,10 @@
- <section id="section-experience">
+ <section id="section-experience" class="min-vh-100 d-flex flex-column justify-content-evenly align-items-center">
 
             <h2>EXPÉRIENCE</h2>
 
-            <div class="container-experience">
+            <div class="container-experience d-flex flex-column justify-content-evenly align-items-center w-100">
 
-                <div class="ligne-exp">
+                <div class="d-flex flex-row justify-content-evenly align-items-center w-100">
 
                     <div class="logo-texte">
 
@@ -32,7 +32,7 @@
 
                 </div>
 
-                <div class="ligne-exp">
+                <div class="d-flex flex-row justify-content-evenly align-items-center w-100">
 
                     <div class="logo-texte">
 

@@ -1,8 +1,8 @@
-<section id="section-contact">
+<section id="section-contact" class="d-flex flex-column justify-content-evenly align-items-center">
 
     <h2 id="title-contact" class="text-center">Pour me contacter !</h2>
 
-    <form class="form" action="traitement.php" id="form-captcha" method="POST">
+    <form class="form d-flex flex-column justify-content-center" action="traitement.php" id="form-captcha" method="POST">
 
         <div class="mb-3">
             <label for="nom" class="form-label"></label>
